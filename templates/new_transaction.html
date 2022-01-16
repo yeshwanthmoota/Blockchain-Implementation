@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+
+{% block title %}Add A New Transaction{% endblock %}
+{% block content %}
+    <div class="page-margin" style="margin-top:5%; margin-left: 5%;">
+        <h1>Create a new Transaction</h1>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="Sender_address" class="form-label">Enter Sender address</label>
+                <input type="text" class="form-control" id="Sender_address" name="sender" style="width: 25%;">
+            </div>
+            <div class="mb-3">
+            <label for="Reciever_address" class="form-label">Enter Reciever address</label>
+            <input type="text" class="form-control" id="Reciever_address" name="reciever" style="width: 25%;">
+            </div>
+            <div class="mb-3">
+                <label for="Amount" class="form-label">Enter Amount to be sent</label>
+                <input type="number" class="form-control" id="Amount" name="amount" style="width: 25%;" step=".00000001">
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base_template.html" %}
+
+{% block title %}Add New Node to Network{% endblock %}
+{% block content %}
+    <div class="page-margin" style="margin-top:5%; margin-left: 5%;">
+        <h1>Add a new node to the Bitcoin Network</h1>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="Sender_address" class="form-label">Enter the Node Addresses seperated by a ","</label>
+                <input type="text" class="form-control" id="Sender_address" name="node_addresses" style="width: 25%;">
+            </div>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+    </div>
+{% endblock %}

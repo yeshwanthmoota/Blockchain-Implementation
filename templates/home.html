@@ -1,0 +1,20 @@
+{% extends "base_template.html" %}
+
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <div class="page-margin" style="margin-top:5%; margin-left: 5%;">
+        ██╗░░██╗███████╗██╗░░░░░██╗░░░░░░█████╗░  ░██╗░░░░░░░██╗░█████╗░██████╗░██╗░░░░░██████╗░██╗<br>
+        ██║░░██║██╔════╝██║░░░░░██║░░░░░██╔══██╗  ░██║░░██╗░░██║██╔══██╗██╔══██╗██║░░░░░██╔══██╗██║<br>
+        ███████║█████╗░░██║░░░░░██║░░░░░██║░░██║  ░╚██╗████╗██╔╝██║░░██║██████╔╝██║░░░░░██║░░██║██║<br>
+        ██╔══██║██╔══╝░░██║░░░░░██║░░░░░██║░░██║  ░░████╔═████║░██║░░██║██╔══██╗██║░░░░░██║░░██║╚═╝<br>
+        ██║░░██║███████╗███████╗███████╗╚█████╔╝  ░░╚██╔╝░╚██╔╝░╚█████╔╝██║░░██║███████╗██████╔╝██╗<br>
+        ╚═╝░░╚═╝╚══════╝╚══════╝╚══════╝░╚════╝░  ░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝░░╚═╝╚══════╝╚═════╝░╚═╝<br>
+        <br>
+        <a href="{{ url_for('get_blockchain') }}" class="btn btn-outline-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Get Blockchain</a>
+        <a href="{{ url_for('connect_node') }}" class="btn btn-outline-success btn-lg" tabindex="-1" role="button" aria-disabled="true">Connect nodes</a>
+        <a href="{{ url_for('add_new_transaction') }}" class="btn btn-outline-danger btn-lg" tabindex="-1" role="button" aria-disabled="true">Add new Transaction</a>
+        <a href="{{ url_for('mine_block') }}" class="btn btn-outline-warning btn-lg" tabindex="-1" role="button" aria-disabled="true">Mine Block</a>
+        <a href="{{ url_for('update_chain') }}" class="btn btn-outline-info btn-lg" tabindex="-1" role="button" aria-disabled="true">Update The Blockchain</a>
+        <a href="{{ url_for('is_valid') }}" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Check Blockchain Validity</a>
+    </div>
+{% endblock %}
